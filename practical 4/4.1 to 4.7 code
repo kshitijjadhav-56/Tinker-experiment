@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Experiment 4 - CSS</title>
+    <!-- 4.3 External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* 4.2 Internal CSS */
+        .internal-h1 {
+            color: blue;
+            background-color: lightgreen;
+        }
+
+        /* 4.4 Box Model */
+        .box {
+            width: 150px;
+            padding: 20px;
+            border: 2px solid black;
+            margin: 10px;
+            background-color: lightgray;
+        }
+
+        /* 4.5 Flexbox */
+        .container {
+            display: flex;
+            gap: 10px;
+        }
+        .item {
+            background-color: orange;
+            padding: 10px;
+        }
+
+        /* 4.6 CSS Grid */
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 10px;
+        }
+        .grid-item {
+            background-color: pink;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* 4.7 Responsive CSS */
+        body {
+            background-color: lightblue;
+        }
+        @media (max-width: 600px) {
+            body {
+                background-color: yellow;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h3>4.1 Inline CSS</h3>
+    <h1 style="color: red; background-color: yellow;">Inline CSS Example</h1>
+    <hr>
+
+    <h3>4.2 Internal CSS</h3>
+    <h1 class="internal-h1">Internal CSS Example</h1>
+    <hr>
+
+    <h3>4.3 External CSS</h3>
+    <h1 class="external-h1">External CSS Example</h1>
+    <button>Click Me</button>
+    <hr>
+
+    <h3>4.4 Box Model</h3>
+    <div class="box">Box Model</div>
+    <hr>
+
+    <h3>4.5 Flexbox</h3>
+    <div class="container">
+        <div class="item">Box 1</div>
+        <div class="item">Box 2</div>
+    </div>
+    <hr>
+
+    <h3>4.6 CSS Grid</h3>
+    <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+    </div>
+    <hr>
+
+    <h3>4.7 Responsive CSS</h3>
+    <h2>Resize window to see color change</h2>
+
+</body>
+</html>
